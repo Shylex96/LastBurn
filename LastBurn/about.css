@@ -1,0 +1,228 @@
+/* Set for every page */
+
+@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+:root{
+	--main-font: 'Source Sans Pro', sans-serif;
+	--secondary-font: 'Herr Von Muellerhoff' , cursive;
+	--body-font: 'Cabin' , sans-serif;
+	--main-font-color-dark: #252525;
+	--secondary-font-color: #c59d5f;
+	--body-font-color: #515151;
+}
+
+html{
+	font-family: var(--body-font);
+	font-size: 10px;
+	color: var(--body-font-color);
+	scroll-behavior: smooth;
+}
+
+section{
+	padding: 7.9rem 0;
+}
+
+img{
+	width: 100%;
+	max-width: 100%;
+}
+
+a{
+	text-decoration: none;
+}
+
+p{
+	font-size: 1.6rem;
+}
+
+.container{
+	width: 100%;
+	max-width: 122.5rem;
+	margin: 0 auto;
+	padding: 0 2.4rem;
+}
+
+header{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background-image: linear-gradient(to bottom, rgb(0,0,0,.5), transparent);
+}
+
+.nav{
+	height: 7,2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu-bar{
+	position: relative;
+	display: flex;
+	padding: 2px;
+	top: 100px;
+	left: -60px;
+	bottom: -23px;
+	text-transform: uppercase;
+}
+
+
+.menu-toggle{
+	color: #fff;
+	font-size: 2.2rem;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 2.5rem;
+	cursor: pointer;
+	z-index: 1500;
+}
+
+.nav-list{
+	list-style: none;
+	position: fixed;
+	top: 0;
+	left: -30%;
+	width: 15%;
+	height: 100vh;
+	background-color: rgba(11, 12, 15, 0.6);
+	padding: 4.4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	z-index: 1250;
+	transform: translateX(135%);
+	transition: transform .5s;
+}
+
+.nav::before{
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vh;
+	height: 100vh;
+	z-index: 1000;
+	opacity: 0;
+	transform: scale(0);
+}
+
+.open .fa-bars{
+	display: block;
+}
+
+.fa-bars{
+	display: flex;
+	position: relative;
+	top: 77px;
+}
+
+
+.open .nav-list{
+	transform: translateX(0);
+}
+
+.open .nav::before{
+	opacity: 1;
+	transform: scale(1);
+}
+
+.nav-item{
+	border-bottom: 2px solid rgb(255,255,255, .3);
+}
+
+.nav-link{
+	display: block;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	letter-spacing: 2px;
+	margin-right: -2px;
+	transition: color.5s;
+}
+
+.nav-link:hover{
+	color: var(--secondary-font-color);
+}
+
+.bg-page{
+	width: 100vw;
+	height: 100vh;
+	background: url("img/background-page.png") center no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: left;
+	text-align: left;
+}
+
+html, body{
+	max-width: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.copyright{
+	position: relative;
+	font-size: 1.5rem;
+	bottom: 220px;
+	right: 15px;
+	text-align: right;
+}
+
+
+/* About CSS  */
+
+.about-me_1{
+	position: relative;
+	width: 1400px;
+	margin: auto;
+	padding: 20px 20px 20px 20px;
+	color: #FFFFFF;
+	background-color: rgb(0,0,0,.5);
+	text-align: center;
+	top: -290px;
+	left: 460px;
+	border-radius: 20px 20px 0px 0px;
+	font-size: 15px;
+	font-family: 'Signika', sans-serif;
+	letter-spacing: 2px;
+}
+
+.about-me_2{
+	position: relative;
+	width: 1400px;
+	margin: auto;
+	padding: 20px 20px 20px 20px;
+	color: #FFFFFF;
+	background-color: rgb(0,0,0,.5);
+	text-align: center;
+	top: -65px;
+	left: 5px;
+	border-radius: 0px 0px 0px 0px;
+	font-size: 15px;
+	font-family: 'Signika', sans-serif;
+	letter-spacing: 2px;
+}
+
+.about-me_3{
+	position: relative;
+	width: 1400px;
+	margin: auto;
+	padding: 20px 20px 20px 20px;
+	color: #FFFFFF;
+	background-color: rgb(0,0,0,.5);
+	text-align: center;
+	top: 150px;
+	left: -450px;
+	border-radius: 0px 0px 20px 20px;
+	font-size: 15px;
+	font-family: 'Signika', sans-serif;
+	letter-spacing: 2px;
+}

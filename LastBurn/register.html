@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta http-equiv="refresh" content="300" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<meta name="author" content="Shylex#6786, estebanalbarran1996@gmail.com" />
+	<meta name="description"
+		content="LastBurn is now here! A family on NosByte private server where you can find a large community of players and endless fun" />
+	<meta name="keywords" content="NosByte, LastBurn, Server, Videogames, Nostale" />
+	<meta name="copyright" content="Shylex#6786" />
+	<meta name="robots" content="index, follow" />
+	<link rel="shortcut icon" type="image/png" href="img/logo-150x150.png" />
+	<link rel="stylesheet" type="text/css" href="register.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Signika:wght@500;600&display=swap" rel="stylesheet">
+	<title>Register</title>
+</head>
+
+<body class="open">
+	<header>
+		<div class="container">
+			<nav class="nav">
+				<div class="menu-toggle">
+					<div class="menu-bar">
+						<p>Menu</p>
+					</div>
+					<i class="fa fa-bars"></i>
+				</div>
+				<a href="index.html" class="logo"></a>
+				<ul class="nav-list">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="register.html" target="_blank" class="nav-link">Register</a>
+					</li>
+					<li class="nav-item">
+						<a href="download.html" target="_blank" class="nav-link">Download</a>
+					</li>
+					<li class="nav-item">
+						<a href="about.html" target="_blank" class="nav-link">About</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section class="bg-page" id="bg-page">
+		<div class="regform"><h1>Registration Form</h1></div>
+		<div class="main">
+			<form>
+				<div id="name">
+					<h2 class="name">Username</h2>
+					<input class="username" type="text" name="first_name" required placeholder="Write your username"><br>
+									
+					<h2 class="password-one">Password</h2>
+					<input class="pass-one" id="password-one-confirm" type="password" name="password" required placeholder="Write your password">
+
+					<h2 class="password-two">Repeat Password</h2>
+					<input class="pass-two" id="password-two-confirm" type="password" name="password" required placeholder="Confirm your password">
+
+					<h2 class="name">Email</h2>
+					<input class="email" type="email" name="email" required placeholder="Enter valid email address" onkeydown="validation()">
+
+					<h2 class="name">Your class</h2>
+					<select class="option" name="subject">
+						<option class="mark" disabled="disabled" selected="selected">--Choose option--</option>
+						<option>Archer</option>
+						<option>Mage</option>
+						<option>Swordman</option>
+						<option>Martial Artist</option>
+					</select>
+					
+					<button class="rbutton" type="submit">Sign in</button>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<article class="copyright">
+		<small>Copyright &copy; 2021, LastBurn Corp. All Rights Reserved.</small><br>
+		<small>Website developer: Shylex#6786</small><br>
+		<small>v0.1.4-alpha</small>
+	</article>
+	
+	</section>
+
+
+	<script src="register.js"></script>
+</body>
+
+</html>

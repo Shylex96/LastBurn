@@ -1,0 +1,298 @@
+/* Set for every page */
+
+@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+:root{
+	--main-font: 'Source Sans Pro', sans-serif;
+	--secondary-font: 'Herr Von Muellerhoff' , cursive;
+	--body-font: 'Cabin' , sans-serif;
+	--main-font-color-dark: #252525;
+	--secondary-font-color: #c59d5f;
+	--body-font-color: #515151;
+}
+
+html{
+	font-family: var(--body-font);
+	font-size: 10px;
+	color: var(--body-font-color);
+	scroll-behavior: smooth;
+}
+
+section{
+	padding: 7.9rem 0;
+}
+
+img{
+	width: 100%;
+	max-width: 100%;
+}
+
+a{
+	text-decoration: none;
+}
+
+p{
+	font-size: 1.6rem;
+}
+
+.container{
+	width: 100%;
+	max-width: 122.5rem;
+	margin: 0 auto;
+	padding: 0 2.4rem;
+}
+
+header{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	background-image: linear-gradient(to bottom, rgb(0,0,0,.5), transparent);
+}
+
+.nav{
+	height: 7,2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu-bar{
+	position: relative;
+	padding: 2px;
+	left: -60px;
+	bottom: -23px;
+	text-transform: uppercase;
+}
+
+.menu-toggle{
+	color: #fff;
+	font-size: 2.2rem;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 2.5rem;
+	cursor: pointer;
+	z-index: 1500;
+}
+
+.nav-list{
+	list-style: none;
+	position: fixed;
+	top: 0;
+	left: -30%;
+	width: 15%;
+	height: 100vh;
+	background-color: rgba(11, 12, 15, 0.6);
+	padding: 4.4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	z-index: 1250;
+	transform: translateX(135%);
+	transition: transform .5s;
+}
+
+.nav::before{
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vh;
+	height: 100vh;
+	z-index: 1000;
+	opacity: 0;
+	transform: scale(0);
+}
+
+.open .fa-bars{
+	display: block;
+}
+
+.open .nav-list{
+	transform: translateX(0);
+}
+
+.open .nav::before{
+	opacity: 1;
+	transform: scale(1);
+}
+
+.nav-item{
+	border-bottom: 2px solid rgb(255,255,255, .3);
+}
+
+.nav-link{
+	display: block;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	letter-spacing: 2px;
+	margin-right: -2px;
+	transition: color.5s;
+}
+
+.nav-link:hover{
+	color: var(--secondary-font-color);
+}
+
+.bg-page{
+	width: 100%;
+	height: 100vh;
+	background: url("img/background-page.png") center no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+html, body{
+	max-width: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.copyright{
+	position: relative;
+	font-size: 1.5rem;
+	bottom: 220px;
+	right: 15px;
+	text-align: right;
+}
+
+/* Index CSS  */
+
+.sub-headline{
+	font-size: 8.5rem;
+	font-family: var(--secondary-font);
+	color: var(--secondary-font-color);
+	font-weight: 100;
+	line-height: .4;
+	letter-spacing: 2px;
+}
+
+.first-letter{
+	text-transform: uppercase;
+	font-size: 10.3rem;
+}
+
+.headline{
+	color: #fff;
+	font-size: 3.7rem;
+	font-family: var(--main-font);
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: .5rem;
+	margin-right: -.5rem;
+}
+
+.separator{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.line{
+	width: 100%;
+	max-width: 8.4rem;
+	height: .25rem;
+	background-color: #fff;
+	position: relative;
+}
+
+.line-right::before,
+.line-left::before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	border: .6rem solid transparent;
+}
+
+.line-right::before{
+	border-right-color: #fff;
+	right: 0;
+}
+
+.line-left::before{
+	border-left-color: #fff;
+	left: 0;
+}
+
+.asterisk{
+	font-size: 1.2rem;
+	color: var(--secondary-font-color);
+	margin: 0 1.6rem;
+}
+
+.headline-description h5{
+	color: #fff;
+	font-size: 1.4rem;
+	font-weight: 100;
+	text-transform: uppercase;
+	margin-bottom: 1.2rem;
+	letter-spacing: 3px;
+	margin-right: -3px;
+}
+
+.midbutton{
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-right: -2px;
+}
+
+.bt-mb{
+	font-size: 1.1rem;
+	background-color: #fff;
+	padding: .9rem 1.8rem;
+	color: var(--body-font-color);
+	border-radius: .4rem;
+	transition: background-color .5s;
+}
+
+.bt-mb:hover,
+.bt-mb:focus{
+	color: #fff;
+	background-color: var(--secondary-font-color);
+}
+
+.logo{
+	display: block;
+	position: relative;
+	top: 20px;
+	left: 10px;
+}
+
+
+.pp{
+	position: relative;
+	top: 50px;
+	left: 1173px;
+	width: 55px;
+	height: 50px;
+}
+
+#PIcon{
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+}
+
+.musicText{
+	position: relative;
+	top: -30px;
+	left: 586px;
+	text-transform: uppercase;
+	font-family: var(--main-font);
+	color: rgba(14, 12, 12, 0.876);
+	font-weight: 600;
+	letter-spacing: 0.1em;
+}
+
